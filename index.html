@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D interactive globe</title>
+    <link rel="stylesheet" href="3d-globe.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="canvas" class="loading">
+            <img class="globe-shadow" src="globe-shadow.png">
+        </div>
+        <div class="info">
+            <h1>The Power of IP Intelligence</h1>
+            <p>Our IP geolocation solutions uncover far more user insights beyond just location, with unparalleled accuracy worldwide.</p>
+            <p>Click a marker on the globe to preview some of the 40+ different datapoints our NetAcuity&trade; technology can uncover.</p>
+            <h2>
+                Example User Info:
+                <span id="activeLocationTitle">
+                    Atlanta
+                </span>
+            </h2>
+            <ul class="location-outputs">
+                <li class="output">IP Address: <span id="locationInfoIP">76.185.97.100</span></li>
+                <li class="output">ZIP/Postal Code: <span id="locationInfoPostal">30303-1026</span></li>
+                <li class="output">City: <span id="locationInfoCity">Atlanta</span></li>
+                <li class="output">Region: <span id="locationInfoRegion">Georgia</span></li>
+                <li class="output">Country: <span id="locationInfoCountry">United States</span></li>
+                <li class="output">Time Zone: <span id="locationInfoTime">UTC-05:00</span></li>
+                <li class="output">Latitude: <span id="locationInfoLat">33.7579</span></li>
+                <li class="output">Longitude: <span id="locationInfoLong">-84.3876</span></li>
+                <li class="output">Connection Type: <span id="locationInfoConnection">Wired</span></li>
+                <li class="output">ISP: <span id="locationInfoISP">AT&amp;T</span></li>
+                <li class="output">Proxy: <span id="locationInfoProxy">Hosting</span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="three.r89.min.js"></script>
+    <script src="OrbitControls.min.js"></script>
+    <script src="TweenLite.min.js"></script>
+    <script src="3d-globe-settings.js"></script>
+</body>
+</html>
